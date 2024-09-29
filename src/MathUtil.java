@@ -21,16 +21,27 @@ public class MathUtil {
         return (a * b) / gcd(a, b);
     }
 //4.Returns the nth Fibonacci number(0,1,1,2)
-public static int fibonacci(int n) {
-    if (n <= 1) return n;
-    int a = 0, b = 1;
-    for (int i = 2; i <= n; i++) {
-        int temp = a + b;
-        a = b;
-        b = temp;
-    }
-    return b;
+    public static int fibonacci(int n) {
+        if (n <= 1) return n;
+        int a = 0, b = 1;
+        for (int i = 2; i <= n; i++) {
+             int temp = a + b;
+             a = b;
+             b = temp;
+        }
+        return b;
 }
+//5.Calculates the factorial of a number
+    public static int factorial(int n) {
+        if (n == 0) return 1;
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+
 
 
 }

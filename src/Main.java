@@ -9,6 +9,9 @@ public class Main {
         System.out.println("what is the lcm of 24 and 36? " + MathUtil.lcm(24,36));
 //taest fibonnaci()
         System.out.println("15th Fibonacci number: " + MathUtil.fibonacci(15));
+// Test factorial
+        System.out.println("Factorial of 5: " + MathUtil.factorial(5));
     }
+
 
 }
