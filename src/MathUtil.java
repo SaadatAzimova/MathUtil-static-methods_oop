@@ -14,8 +14,11 @@ public class MathUtil {
             b = a % b;
             a = temp;
         }
-        return a; //Returns: The GCD of a and b
+        return a;
     }
-
+//Computes the least common multiple (LCM) of two numbers.
+    public static int lcm(int a, int b) {
+        return (a * b) / gcd(a, b);
+    }
 }
 
