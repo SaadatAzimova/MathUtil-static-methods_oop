@@ -58,7 +58,16 @@ public class MathUtil {
         }
         return sum;
     }
-
+//8.Reverses the digits of a number n
+// Method to reverse the digits of a number
+    public int reverseNumber(int n) {
+        int reversed = 0;
+        while (n != 0) {
+            reversed = reversed * 10 + n % 10; //extract the last digit and append it to reversed
+            n /= 10;//remove the last digit from n, and the code stops working when n = 0
+        }
+        return reversed;
+    }
 
 }
 

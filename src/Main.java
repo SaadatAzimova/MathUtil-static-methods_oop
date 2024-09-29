@@ -31,6 +31,11 @@ public class Main {
         System.out.println("Sum of digits of 12345: " + SumOfDigits.sumOfDigits(12345));
         System.out.println("Sum of digits of 99999: " + SumOfDigits.sumOfDigits(99999));
         System.out.println("Sum of digits of 12345: " + SumOfDigits.sumOfDigits(100));
+//test reverseNumber()
+        MathUtil reverseNumber = new MathUtil();
+        System.out.println("Reversed number of 12345: " + reverseNumber.reverseNumber(12345));
+        System.out.println("Reversed number of 123456: " + reverseNumber.reverseNumber(123456));
+        System.out.println("Reversed number of 1234567: " + reverseNumber.reverseNumber(1234567));
 
 
     }
