@@ -7,5 +7,8 @@ public class Main {
         System.out.println("what is the gcd of 45 and 30? " + MathUtil.gcd(45,30));
 //test lcm()
         System.out.println("what is the lcm of 24 and 36? " + MathUtil.lcm(24,36));
+//taest fibonnaci()
+        System.out.println("15th Fibonacci number: " + MathUtil.fibonacci(15));
     }
+
 }
