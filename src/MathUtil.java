@@ -25,23 +25,30 @@ public class MathUtil {
         if (n <= 1) return n;
         int a = 0, b = 1;
         for (int i = 2; i <= n; i++) {
-             int temp = a + b;
-             a = b;
+             int temp = a + b; //adding b to the previous number
+             a = b;//a becomes b
              b = temp;
         }
-        return b;
+        return b;//returning sum of last 2 numbers
 }
 //5.Calculates the factorial of a number
     public static int factorial(int n) {
         if (n == 0) return 1;
         int result = 1;
         for (int i = 1; i <= n; i++) {
-            result *= i;
+            result *= i; //multiplying each number from 1 to n
         }
         return result;
+}
+//6.Determines if the given number n is a perfect number (a number equal to the sum of its divisors, excluding itself).
+    public boolean isPerfectNumber(int n) {
+        if (n <= 1) return false;
+        int sum = 0;
+        for (int i = 1; i <= n / 2; i++) {
+            if (n % i == 0) sum += i; //we found devisors of n and added to sum
+        }
+        return sum == n;
     }
-
-
 
 
 }
