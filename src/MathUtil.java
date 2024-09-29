@@ -59,7 +59,7 @@ public class MathUtil {
         return sum;
     }
 //8.Reverses the digits of a number n
-// Method to reverse the digits of a number
+
     public int reverseNumber(int n) {
         int reversed = 0;
         while (n != 0) {
@@ -68,6 +68,18 @@ public class MathUtil {
         }
         return reversed;
     }
+//9.Checks if a number is an Armstrong number (a number that is equal to the sum of its own digits each raised to the power of the number of digits).
+    public boolean isArmstrongNumber(int n) {
+        int originalNumber = n;
+        int sum = 0;
+        int numberOfDigits = String.valueOf(n).length();  // Get the number of digits in n
 
+        while (n != 0) {
+            int digit = n % 10;
+            sum += Math.pow(digit, numberOfDigits);//n to the power of the number of digits
+            n /= 10;
+        }
+        return sum == originalNumber;
+}
 }
 

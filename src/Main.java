@@ -36,6 +36,11 @@ public class Main {
         System.out.println("Reversed number of 12345: " + reverseNumber.reverseNumber(12345));
         System.out.println("Reversed number of 123456: " + reverseNumber.reverseNumber(123456));
         System.out.println("Reversed number of 1234567: " + reverseNumber.reverseNumber(1234567));
+// test isArmstrongNumber()
+        MathUtil armstrongNumber = new MathUtil();
+        System.out.println("Is 153 an Armstrong number? " + armstrongNumber.isArmstrongNumber(153)); // true
+        System.out.println("Is 1634 an Armstrong number? " + armstrongNumber.isArmstrongNumber(1634)); // true
+        System.out.println("Is 1024 an Armstrong number? " + armstrongNumber.isArmstrongNumber(1024)); // false
 
 
     }
