@@ -72,7 +72,7 @@ public class MathUtil {
     public boolean isArmstrongNumber(int n) {
         int originalNumber = n;
         int sum = 0;
-        int numberOfDigits = String.valueOf(n).length();  // Get the number of digits in n
+        int numberOfDigits = String.valueOf(n).length();  //get the number of digits in n
 
         while (n != 0) {
             int digit = n % 10;
@@ -80,6 +80,23 @@ public class MathUtil {
             n /= 10;
         }
         return sum == originalNumber;
-}
+    }
+//10.Finds the smallest prime number greater than n
+    public int nextPrime(int n) {
+        n++;  //start checking from the number after n
+        while (!truePrime(n)) {
+            n++;  //keep increasing n until a prime is found
+        }
+        return n;  //return the next prime
+    }
+        private boolean truePrime(int n) {
+            if (n <= 1) return false;
+            for (int i = 2; i * i <= n; i++) {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
+
+
 }
 

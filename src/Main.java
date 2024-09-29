@@ -41,6 +41,13 @@ public class Main {
         System.out.println("Is 153 an Armstrong number? " + armstrongNumber.isArmstrongNumber(153)); // true
         System.out.println("Is 1634 an Armstrong number? " + armstrongNumber.isArmstrongNumber(1634)); // true
         System.out.println("Is 1024 an Armstrong number? " + armstrongNumber.isArmstrongNumber(1024)); // false
+// Test nextPrime
+        MathUtil primeNumber = new MathUtil();
+        System.out.println("Next prime after 60: " + primeNumber.nextPrime(60));
+        System.out.println("Next prime after 87: " + primeNumber.nextPrime(87));
+        System.out.println("Next prime after 52: " + primeNumber.nextPrime(52));
+
+
 
 
     }
