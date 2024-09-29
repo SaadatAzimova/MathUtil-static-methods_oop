@@ -7,6 +7,15 @@ public class MathUtil {
         }
         return true;//Returns true if the number is prime, otherwise false.
     }
+//Calculates the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a; //Returns: The GCD of a and b
+    }
 
 }
 
