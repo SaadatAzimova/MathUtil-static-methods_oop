@@ -49,6 +49,15 @@ public class MathUtil {
         }
         return sum == n;
     }
+//7. Computes the sum of the digits of the given number n.
+    public int sumOfDigits(int n) {
+        int sum = 0;
+        while (n != 0) {
+            sum += n % 10; //to count every digit of the number we add the remaider of the number when it is divided into 10
+            n /= 10; //divide number into 10, and continue the process till  n becomes 0(till no digits left)
+        }
+        return sum;
+    }
 
 
 }

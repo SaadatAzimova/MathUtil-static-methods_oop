@@ -26,6 +26,13 @@ public class Main {
         System.out.println("Is 28 a perfect number? " + PerfectNumber.isPerfectNumber(28)); // true
         System.out.println("Is 496 a perfect number? " + PerfectNumber.isPerfectNumber(496)); // true
         System.out.println("Is 12 a perfect number? " + PerfectNumber.isPerfectNumber(12)); // false
+//test sumOfDigits()
+        MathUtil SumOfDigits = new MathUtil();
+        System.out.println("Sum of digits of 12345: " + SumOfDigits.sumOfDigits(12345));
+        System.out.println("Sum of digits of 99999: " + SumOfDigits.sumOfDigits(99999));
+        System.out.println("Sum of digits of 12345: " + SumOfDigits.sumOfDigits(100));
+
+
     }
 
 
